@@ -1,0 +1,99 @@
+:py:mod:`lmflow.utils.constants`
+================================
+
+.. py:module:: lmflow.utils.constants
+
+.. autoapi-nested-parse::
+
+   Commonly used constants.
+
+   ..
+       !! processed by numpydoc !!
+
+
+Module Contents
+---------------
+
+.. py:data:: TEXT_ONLY_DATASET_DESCRIPTION
+
+   
+
+.. py:data:: TEXT_ONLY_DATASET_DETAILS
+
+   
+
+.. py:data:: TEXT2TEXT_DATASET_DESCRIPTION
+
+   
+
+.. py:data:: TEXT2TEXT_DATASET_DETAILS
+
+   
+
+.. py:data:: FLOAT_ONLY_DATASET_DESCRIPTION
+
+   
+
+.. py:data:: TEXT_ONLY_DATASET_LONG_DESCRITION
+
+   
+
+.. py:data:: TEXT2TEXT_DATASET_LONG_DESCRITION
+
+   
+
+.. py:data:: DATASET_DESCRIPTION_MAP
+
+   
+
+.. py:data:: INSTANCE_FIELDS_MAP
+
+   
+
+.. py:data:: CONVERSATION_ROLE_NAMES
+
+   
+
+.. py:data:: CONTROLLER_HEART_BEAT_EXPIRATION
+   :value: 30
+
+   
+
+.. py:data:: WORKER_HEART_BEAT_INTERVAL
+   :value: 15
+
+   
+
+.. py:data:: LOGDIR
+   :value: '.'
+
+   
+
+.. py:data:: IGNORE_INDEX
+
+   
+
+.. py:data:: IMAGE_TOKEN_INDEX
+
+   
+
+.. py:data:: DEFAULT_IMAGE_TOKEN
+   :value: '<image>'
+
+   
+
+.. py:data:: DEFAULT_IMAGE_PATCH_TOKEN
+   :value: '<im_patch>'
+
+   
+
+.. py:data:: DEFAULT_IM_START_TOKEN
+   :value: '<im_start>'
+
+   
+
+.. py:data:: DEFAULT_IM_END_TOKEN
+   :value: '<im_end>'
+
+   
+

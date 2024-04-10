@@ -1,0 +1,110 @@
+:py:mod:`lmflow.utils.conversation_template`
+============================================
+
+.. py:module:: lmflow.utils.conversation_template
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   lmflow.utils.conversation_template.ConversationTemplate
+   lmflow.utils.conversation_template.Llama2ConversationTemplate
+
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   lmflow.utils.conversation_template.logger
+
+
+.. py:data:: logger
+
+   
+
+.. py:class:: ConversationTemplate
+
+
+   .. py:method:: encode_conversation(tokenizer: transformers.PreTrainedTokenizer, messages: List[Dict[str, str]], system: Optional[str] = None, tools: Optional[List[str]] = None, **kwargs) -> Sequence[Tuple[List[int], List[int]]]
+
+      
+      Messages here should be guaranteed to be in pairs, with the first message being the user message and the second message being the system message.
+      TODO: Support for different models.
+      Data example: 
+      ```json
+      {
+          "conversation_id": 2,
+          "system": "sysinfo1",
+          "tools": ["tool_1_desc"],
+          "messages": [
+              {
+                  "role": "human",
+                  "content": "I have a M via API so"
+              },
+              {
+                  "role": "gpt",
+                  "content": "To"
+              }
+          ]
+      }
+      ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+   .. py:method:: __encode(tokenizer: transformers.PreTrainedTokenizer, messages: List[Dict[str, str]], system: Optional[str] = None, tools: Optional[str] = None, **kwargs) -> Sequence[Tuple[List[int], List[int]]]
+
+
+
+.. py:class:: Llama2ConversationTemplate
+
+
+   Bases: :py:obj:`ConversationTemplate`
+
+   .. py:method:: __encode(tokenizer: transformers.PreTrainedTokenizer, messages: List[Dict[str, str]], system: Optional[str] = None, tools: Optional[str] = None, **kwargs) -> Sequence[Tuple[List[int], List[int]]]
+
+      
+      The system info is included in the first round of user input for Llama2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
